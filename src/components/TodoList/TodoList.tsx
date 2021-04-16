@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import TodoItem from "../TodoItem/TodoItem";
 import NewTodoItem from "../NewTodoItem/NewTodoItem";
+import { Todo } from "../../types";
 import "./TodoList.css";
 
-const TodoList = () => {
-  const [todoItems, setTodoItems] = useState([
+const TodoList: React.FC = (props) => {
+  const [todoItems, setTodoItems] = useState<Todo[]>([
     { checked: false, content: "clean the house" },
   ]);
 
-  const handleToggleCheck = (index) => {
+  const handleToggleCheck = (index: number) => {
     const copyItems = [...todoItems];
     copyItems[index] = {
       ...copyItems[index],
@@ -17,10 +18,10 @@ const TodoList = () => {
     setTodoItems(copyItems);
   };
 
-  const addItem = (content) =>
+  const addItem = (content: string) =>
     setTodoItems([...todoItems, { content, checked: false }]);
 
-  const removeItem = (index) => {
+  const removeItem = (index: number) => {
     const copyItems = [...todoItems];
     copyItems.splice(index, 1);
     setTodoItems(copyItems);
@@ -32,8 +33,8 @@ const TodoList = () => {
         <TodoItem
           key={index}
           item={todoItem}
-          onChange={() => handleToggleCheck(index)}
-          removeItem={() => removeItem(index)}
+          toggle={() => handleToggleCheck(index)}
+          remove={() => removeItem(index)}
         />
       ))}
       <NewTodoItem addItem={addItem} />
