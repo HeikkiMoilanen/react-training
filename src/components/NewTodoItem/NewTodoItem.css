@@ -1,0 +1,10 @@
+.new-todo-item {
+}
+
+.new-todo-item .buttons-container {
+  margin-top: 0.4rem;
+}
+
+.new-todo-item .buttons-container button:not(:first-child) {
+  margin-left: 0.8rem;
+}
