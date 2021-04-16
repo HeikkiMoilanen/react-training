@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./NewTodoItem.css";
+import "./NewTodoItem.scss";
 
 type Props = {
   addItem: (content: string) => void;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TodoItem from "../TodoItem/TodoItem";
 import NewTodoItem from "../NewTodoItem/NewTodoItem";
 import { Todo } from "../../types";
-import "./TodoList.css";
+import "./TodoList.scss";
 
 const TodoList: React.FC = (props) => {
   const [todoItems, setTodoItems] = useState<Todo[]>([
