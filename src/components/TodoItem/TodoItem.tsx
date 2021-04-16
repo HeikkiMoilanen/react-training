@@ -1,8 +1,15 @@
 import React from "react";
+import { Todo } from "../../types";
 import "./TodoItem.css";
 
-const TodoItem = (props) => {
-  const { item, onChange, removeItem } = props;
+type Props = {
+  item: Todo;
+  toggle: () => void;
+  remove: () => void;
+};
+
+const TodoItem: React.FC<Props> = (props) => {
+  const { item, toggle, remove } = props;
 
   return (
     <div className="todo-item">
@@ -11,11 +18,11 @@ const TodoItem = (props) => {
           className="todo-item-checkbox"
           type="checkbox"
           checked={item.checked}
-          onChange={onChange}
+          onChange={toggle}
         />
         {item.content}
       </label>
-      <button onClick={removeItem}>Poista</button>
+      <button onClick={remove}>Poista</button>
     </div>
   );
 };
