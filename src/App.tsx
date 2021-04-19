@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Todos from "./Todos";
+import HockeyCards from "./HockerCards";
 
 import "./App.scss";
 
@@ -15,7 +16,10 @@ function App() {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/todo">About</Link>
+                <Link to="/todo">Todo</Link>
+              </li>
+              <li>
+                <Link to="/hockey-cards">Hockey cards</Link>
               </li>
             </ul>
           </nav>
@@ -25,6 +29,10 @@ function App() {
           <Switch>
             <Route path="/todo">
               <Todos />
+            </Route>
+
+            <Route path="/hockey-cards">
+              <HockeyCards teamId={30} />
             </Route>
 
             <Route>Pick some</Route>

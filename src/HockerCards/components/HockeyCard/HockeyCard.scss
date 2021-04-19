@@ -1,0 +1,126 @@
+.HockeyCard {
+  position: relative;
+  background: #222;
+  color: white;
+
+  border-radius: 1rem;
+  border: 1px solid #222;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+
+  .HockeyCard__image {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+
+  .HockeyCard__captainStatus {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: #333;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px #c09a20;
+    background: #ffc300;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom: 1px solid #c09a20;
+    border-right: 1px solid #c09a20;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .HockeyCard__primaryNumber {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: #333;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px #c09a20;
+    background: #ffc300;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom: 1px solid #c09a20;
+    border-right: 1px solid #c09a20;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .HockeyCard__primaryNumber {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: #333;
+    font-size: 5rem;
+    line-height: 5.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px #c09a20;
+    background: #ffc300;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom: 1px solid #c09a20;
+    border-right: 1px solid #c09a20;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .HockeyCard__fullName {
+    color: #ffc300;
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > * {
+      margin: 0 0.5rem;
+    }
+
+    img {
+      margin-top: 5px;
+      height: 3rem;
+    }
+  }
+
+  .HockeyCard__position {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .HockeyCard__nationality {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .HockeyCard__details {
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .HockeyCard__detailTable {
+    margin: 0 5rem;
+    text-align: left;
+    border-spacing: 2rem 3px;
+    border-collapse: separate;
+
+    td:first-of-type {
+      font-weight: bold;
+    }
+  }
+}
