@@ -39,7 +39,15 @@ const data: Player = {
   },
 };
 
-// After you have defined MyProps type and given HockeyCard component MyProps type
+/**
+ * Exercise 2: Using Props
+ * The code you write here renders at the route http://localhost:3000/exercices/2
+ *
+ * You can see what the end result should look like at http://localhost:3000/exercices/2-final
+ * */
+
+// Start here!
+// First define MyProps and give the HockeyCard MyProps type.
 // pass `data`-variable as `player`-prop to <HockeyCard />
 const HockeyCardContainer: React.FC = (props) => <HockeyCard />;
 export default HockeyCardContainer;

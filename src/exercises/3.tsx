@@ -19,8 +19,9 @@ const CardRightCornerBadge: React.FC<{ className?: string }> = (props) => {
 };
 
 // 💯 Make CardLeftCornerBadge-component for showing captain status (className="hockey-card__leftCornerBadge")
-// 🔥 For extra points, make more detailed CaptainStatus component that
-// uses CardLeftCornerBadge and features showing logic for captain status
+// 🔥 For extra points, make a CaptainStatus component that is fully responsible for displaying captain status letter in the topleft corner.
+// It should use CardLeftCornerBadge component that you make (similar to CardRightCornerBadge).
+// It should also include the logic of showing / not showing the captain status.
 
 const HockeyCard: React.FC<Props> = (props) => {
   const { player } = props;
