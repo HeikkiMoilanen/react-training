@@ -1,6 +1,7 @@
-.exercise-4__listWrapper {
+.exercise-5__listWrapper {
   width: 100%;
   overflow-y: auto;
+  flex: 1;
 
   > div {
     display: flex;
@@ -16,6 +17,7 @@
 }
 
 input {
+  margin-top: 1rem;
   font-size: 1.5rem;
   border-radius: 5px;
   padding: 0.5rem;

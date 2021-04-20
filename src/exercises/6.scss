@@ -1,0 +1,36 @@
+.exercise-6__listWrapper {
+  width: 100%;
+  overflow-y: auto;
+  flex: 1;
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding: 2rem;
+    width: 80%;
+    > * {
+      margin: 1rem 0;
+    }
+  }
+}
+
+input {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.exercise-6__playerCount {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 3rem;
+  border-radius: 1rem;
+  background: #ffc300;
+  border: 1px solid #c09a20;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}

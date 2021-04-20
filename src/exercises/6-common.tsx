@@ -1,7 +1,7 @@
 import { HockeyCard } from "components/HockeyCard";
 import { RosterItem } from "types/hockeyCards";
 
-import "./5.scss";
+import "./6.scss";
 
 export const ListItem: React.FC<{ player: RosterItem }> = (props) => {
   const { player } = props;
@@ -23,8 +23,37 @@ export const ListWrapper: React.FC<React.HTMLAttributes<HTMLDivElement>> = (
   const { children, className = "" } = props;
 
   return (
-    <div className={`exercise-5__listWrapper ${className}`}>
+    <div className={`exercise-6__listWrapper ${className}`}>
       <div>{children}</div>
     </div>
+  );
+};
+
+export const PlayerCount: React.FC<{ count: number }> = (props) => (
+  <div className="exercise-6__playerCount">
+    Number of players: <b>{props.count}</b>
+  </div>
+);
+
+type FilterInputProps = {
+  value: string;
+  onChange: (inputValue: string) => void;
+};
+
+export const FilterInput: React.FC<FilterInputProps> = (props) => {
+  const { onChange, value } = props;
+
+  type InputHandler = React.ChangeEventHandler<HTMLInputElement>;
+
+  const handleInputChange: InputHandler = (event) =>
+    onChange(event.target.value);
+
+  return (
+    <input
+      type="text"
+      placeholder="Filter players"
+      onChange={handleInputChange}
+      value={value}
+    />
   );
 };
