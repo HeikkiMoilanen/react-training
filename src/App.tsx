@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Todos from "./Todos";
-import HockeyCards from "./HockerCards";
+import HockeyCards from "./HockeyCards";
 
 import exercises from "exercises";
 

@@ -2,8 +2,8 @@ import * as React from "react";
 import { useRouteMatch } from "react-router-dom";
 
 import { PlayerResponse } from "types/hockeyCards";
-import { useFetch } from "hooks";
-import { getNhlApiUrl } from "utils";
+import { useFetch } from "../../hooks";
+import { getNhlApiUrl } from "../../utils";
 import { HockeyCard as HockeyCardComponent } from "components";
 
 import "components/HockeyCard/HockeyCard.scss";

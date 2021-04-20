@@ -1,8 +1,8 @@
 import * as React from "react";
 
 import { TeamResponse } from "types/hockeyCards";
-import { useFetch } from "hooks";
-import { getNhlApiUrl } from "utils";
+import { useFetch } from "../../hooks";
+import { getNhlApiUrl } from "../../utils";
 
 import { HockeyCardMenu } from "components";
 
