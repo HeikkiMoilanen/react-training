@@ -54,7 +54,7 @@ const HockeyCard: React.FC = (props) => {
   // const { someProp } = props
 
   return (
-    <div className="hockey-card">
+    <div className="hockey-card__wrapper">
       <PlayerImage
         size="huge"
         className="hockey-card__image"

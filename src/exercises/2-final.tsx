@@ -61,7 +61,7 @@ const HockeyCard: React.FC<Props> = (props) => {
   const captainStatus = getCaptainStatus();
 
   return (
-    <div className="hockey-card">
+    <div className="hockey-card__wrapper">
       <PlayerImage size="huge" className="hockey-card__image" {...player} />
 
       {/* Ternary should be preferred over short circuit operator e.g. captainStatus && <div ... />, because for example 0 would be rendered to dom */}

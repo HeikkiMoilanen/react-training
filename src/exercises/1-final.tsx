@@ -4,7 +4,7 @@ import "components/HockeyCard/HockeyCard.scss";
 
 const HockeyCard: React.FC = (props) => {
   return (
-    <div className="hockey-card">
+    <div className="hockey-card__wrapper">
       <div className="hockey-card__fullName">Patrik Laine</div>
       <div className="hockey-card__position">Left Wing</div>
       <table className="hockey-card__detailTable">
