@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <nav>
+          <nav className="App-nav">
             <ul>
               <li>
                 <Link to="/">Home</Link>
