@@ -17,17 +17,20 @@ function App() {
               <li>
                 <Link to="/">Home</Link>
               </li>
-              <li>
-                <Link to="/todo">Todo</Link>
-              </li>
-              <li>
-                <Link to="/hockey-cards">Hockey cards</Link>
-              </li>
+
               {exercises.map((exercise) => (
                 <li key={exercise.path}>
                   <Link to={exercise.path}>{exercise.label}</Link>
                 </li>
               ))}
+
+              <li>
+                <Link to="/todo">Example Todo app</Link>
+              </li>
+
+              <li>
+                <Link to="/hockey-cards">Example Hockey cards app</Link>
+              </li>
             </ul>
           </nav>
         </header>

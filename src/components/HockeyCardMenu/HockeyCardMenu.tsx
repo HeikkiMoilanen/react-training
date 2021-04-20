@@ -32,7 +32,9 @@ type Extras = {
 const Wrapper: React.FC<React.HTMLAttributes<HTMLUListElement>> = (props) => {
   const { className, ...rest } = props;
 
-  return <ul {...rest} className={cx("player-image", className)} />;
+  return (
+    <ul {...rest} className={cx("hockey-card-menu__wrapper", className)} />
+  );
 };
 
 HockeyCardMenu.Wrapper = Wrapper;
