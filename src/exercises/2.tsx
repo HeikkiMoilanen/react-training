@@ -94,7 +94,7 @@ const HockeyCard: React.FC = (props) => {
         </div>
 
         <div className="hockey-card__position">
-          {/* get primaryNumber from props */}Left Wing
+          {/* get primaryPosition from props */}Left Wing
         </div>
 
         <table className="hockey-card__detailTable">
