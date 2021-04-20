@@ -3,8 +3,12 @@ import * as React from "react";
 import "components/HockeyCard/HockeyCard.scss";
 
 /**
+ * The code you write here renders at the route http://localhost:3000/exercices/1
+ *
+ * You can see what the end result should look like at http://localhost:3000/exercices/1-final
+ *
  * Please make a hockey card component that describes one player.
- * You can make up the data.
+ * You can make the data up.
  *
  * The card should show the player's full name and position.
 
