@@ -1,11 +1,19 @@
 .todo-item {
   display: flex;
   align-items: center;
-}
+  margin-top: 0.8rem;
 
-.todo-item-checkbox {
-}
+  .todo-item-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.todo-item-text {
-  margin-left: 0.8rem;
+  .todo-item-checkbox {
+    margin: 0 0.8rem 0 0;
+  }
+
+  .todo-item-remove {
+    margin-left: 0.8rem;
+  }
 }

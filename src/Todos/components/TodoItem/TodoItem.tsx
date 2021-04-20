@@ -13,7 +13,7 @@ const TodoItem: React.FC<Props> = (props) => {
 
   return (
     <div className="todo-item">
-      <label className="todo-item-text">
+      <label className="todo-item-label">
         <input
           className="todo-item-checkbox"
           type="checkbox"
@@ -22,7 +22,9 @@ const TodoItem: React.FC<Props> = (props) => {
         />
         {item.content}
       </label>
-      <button onClick={remove}>Poista</button>
+      <button className="todo-item-remove" onClick={remove}>
+        Poista
+      </button>
     </div>
   );
 };
