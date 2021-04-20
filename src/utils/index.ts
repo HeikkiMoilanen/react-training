@@ -1,4 +1,4 @@
-import { API_ENDPOINT, API_HOST, COUNTRIES } from "./constants";
+import { API_ENDPOINT, API_HOST } from "constants/api";
 
 export const getNhlApiUrl = (
   ...args: [...(string | number)[], object] | string[]
@@ -12,8 +12,6 @@ export const getNhlApiUrl = (
   for (const entry of Object.entries(query)) {
     url.searchParams.set(...entry);
   }
+
   return url.toString();
 };
-
-export const getCountryByNationality = (nationality: string) =>
-  COUNTRIES.find((country) => country.CCA3 === nationality);

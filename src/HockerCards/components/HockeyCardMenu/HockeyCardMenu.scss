@@ -1,15 +1,15 @@
-.HockeyCardMenu {
+.hockey-card-menu {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
 
-  .HockeyCardMenuItem {
+  .hockey-card-menu-item {
     width: 100%;
     background-color: #222;
 
-    .HockeyCardMenuItem__link {
+    .hockey-card-menu-item__link {
       display: flex;
       align-items: center;
       text-decoration: none;
@@ -20,7 +20,7 @@
       }
     }
 
-    .HockeyCardMenuItem__jerseyNumber {
+    .hockey-card-menu-item__jerseyNumber {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -35,22 +35,22 @@
       align-self: stretch;
     }
 
-    .HockeyCardMenuItem__image {
+    .hockey-card-menu-item__image {
       margin-right: 0.5rem;
     }
 
-    .HockeyCardMenuItem__fullName {
+    .hockey-card-menu-item__fullName {
       font-size: 1.1rem;
       font-weight: bold;
     }
 
-    .HockeyCardMenuItem__fullName,
-    .HockeyCardMenuItem__position {
+    .hockey-card-menu-item__fullName,
+    .hockey-card-menu-item__position {
       margin: 0;
     }
   }
 
-  .HockeyCardMenuItem + .HockeyCardMenuItem {
+  .hockey-card-menu-item + .hockey-card-menu-item {
     border-top: 1px solid black;
   }
 }

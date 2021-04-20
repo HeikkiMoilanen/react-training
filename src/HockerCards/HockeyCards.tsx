@@ -12,7 +12,7 @@ const HockeyCards: React.FC<{ teamId: number }> = (props) => {
         <HockeyCard />
       </div>
       <nav id="hockey-card-menu">
-        <HockeyCardMenu teamId={30} />
+        <HockeyCardMenu teamId={29} />
       </nav>
     </div>
   );

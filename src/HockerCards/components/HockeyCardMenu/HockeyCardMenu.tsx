@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-import { TeamResponse } from "../../types";
-import { useFetch } from "../../useFetch";
-import { getNhlApiUrl } from "../../utils";
-import PlayerImage from "../PlayerImage";
+import { TeamResponse } from "types/hockeyCards";
+import { useFetch } from "hooks";
+import { getNhlApiUrl } from "utils";
+import PlayerImage from "components/PlayerImage";
 
 import "./HockeyCardMenu.scss";
 
@@ -25,30 +25,32 @@ const HockeyCardMenu: React.FC<{ teamId: number }> = (props) => {
   const [team] = data.teams;
 
   return (
-    <ul className="HockeyCardMenu">
+    <ul className="hockey-card-menu">
       {team.roster.roster.map((player) => {
         const { person, jerseyNumber, position } = player;
         const { id, fullName } = person;
 
         return (
-          <li className="HockeyCardMenuItem" key={id}>
+          <li className="hockey-card-menu-item" key={id}>
             <Link
-              className="HockeyCardMenuItem__link"
+              className="hockey-card-menu-item__link"
               to={`/hockey-cards/${id}`}
             >
               <PlayerImage
-                className="HockeyCardMenuItem__image"
+                className="hockey-card-menu-item__image"
                 size="small"
                 id={id}
                 fullName={fullName}
               />
 
-              <div className="HockeyCardMenuItem__nameWrapper">
-                <p className="HockeyCardMenuItem__fullName">{fullName}</p>
-                <p className="HockeyCardMenuItem__position">{position.name}</p>
+              <div className="hockey-card-menu-item__nameWrapper">
+                <p className="hockey-card-menu-item__fullName">{fullName}</p>
+                <p className="hockey-card-menu-item__position">
+                  {position.name}
+                </p>
               </div>
 
-              <span className="HockeyCardMenuItem__jerseyNumber">
+              <span className="hockey-card-menu-item__jerseyNumber">
                 {jerseyNumber}
               </span>
             </Link>

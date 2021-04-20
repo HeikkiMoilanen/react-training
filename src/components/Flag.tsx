@@ -1,7 +1,31 @@
-export const API_HOST = "https://statsapi.web.nhl.com";
-export const API_ENDPOINT = "/api/v1";
+import * as React from "react";
 
-export const COUNTRIES = [
+export const Flag: React.FC<{
+  nationality: string;
+  className?: string;
+  size?: number;
+}> = (props) => {
+  const { nationality, size = 64, className } = props;
+  const country = getCountryByNationality(nationality);
+
+  if (!country) {
+    return null;
+  }
+
+  const host = "https://www.countryflags.io";
+
+  const src = `${host}/${country?.CCA2}/flat/${size}.png`;
+  const alt = country?.Nationality;
+
+  return <img src={src} alt={alt} className={className} />;
+};
+
+export default Flag;
+
+const getCountryByNationality = (nationality: string) =>
+  COUNTRIES.find((country) => country.CCA3 === nationality);
+
+const COUNTRIES = [
   {
     CCA2: "AD",
     Name: "Andorra",

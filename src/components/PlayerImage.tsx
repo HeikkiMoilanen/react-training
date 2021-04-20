@@ -20,7 +20,7 @@ const getMagnifier = (size: Size) => {
   return magnifierMap[size];
 };
 
-const PlayerImage: React.FC<{
+export const PlayerImage: React.FC<{
   id: number;
   fullName: string;
   className?: string;

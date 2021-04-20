@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Todos from "./Todos";
 import HockeyCards from "./HockerCards";
 
+import exercises from "exercises";
+
 import "./App.scss";
 
 function App() {
@@ -21,6 +23,11 @@ function App() {
               <li>
                 <Link to="/hockey-cards">Hockey cards</Link>
               </li>
+              {exercises.map((exercise) => (
+                <li key={exercise.path}>
+                  <Link to={exercise.path}>{exercise.label}</Link>
+                </li>
+              ))}
             </ul>
           </nav>
         </header>
@@ -30,6 +37,14 @@ function App() {
             <Route path="/todo">
               <Todos />
             </Route>
+
+            {exercises.map((exercise) => (
+              <Route
+                key={exercise.path}
+                path={exercise.path}
+                component={exercise.component}
+              />
+            ))}
 
             <Route path="/hockey-cards">
               <HockeyCards teamId={30} />

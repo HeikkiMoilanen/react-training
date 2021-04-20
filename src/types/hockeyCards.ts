@@ -1,17 +1,20 @@
 export type Position =
-  | { abbrev: "G"; code: "G"; name: "Goalie"; type: "Goalie" }
-  | { abbrev: "D"; code: "D"; name: "Defenseman"; type: "Defenseman" }
-  | { abbrev: "RW"; code: "R"; name: "Right Wing"; type: "Forward" }
-  | { abbrev: "LW"; code: "L"; name: "Left Wing"; type: "Forward" }
-  | { abbrev: "C"; code: "C"; name: "Center"; type: "Forward" }
-  | { abbrev: "N/A"; code: "N/A"; name: "Unknown"; type: "Unknown" }
-  | { abbrev: "Head Coach"; code: "HC"; name: "Head Coach"; type: "Coach" };
-
-
+  | { abbreviation: "G"; code: "G"; name: "Goalie"; type: "Goalie" }
+  | { abbreviation: "D"; code: "D"; name: "Defenseman"; type: "Defenseman" }
+  | { abbreviation: "RW"; code: "R"; name: "Right Wing"; type: "Forward" }
+  | { abbreviation: "LW"; code: "L"; name: "Left Wing"; type: "Forward" }
+  | { abbreviation: "C"; code: "C"; name: "Center"; type: "Forward" }
+  | { abbreviation: "N/A"; code: "N/A"; name: "Unknown"; type: "Unknown" }
+  | {
+      abbreviation: "Head Coach";
+      code: "HC";
+      name: "Head Coach";
+      type: "Coach";
+    };
 
 export type ShootsCatches = "R" | "L";
 
-export type RosterStatus = "N";
+export type RosterStatus = "N" | "Y";
 
 export type Player = {
   id: number;
@@ -23,7 +26,7 @@ export type Player = {
   birthDate: string;
   currentAge: number;
   birthCity: string;
-  birthStateProvince: string;
+  birthStateProvince?: string;
   birthCountry: string;
   nationality: string;
   height: string;
@@ -34,7 +37,7 @@ export type Player = {
   rookie: boolean;
   shootsCatches: ShootsCatches;
   rosterStatus: RosterStatus;
-  currentTeam: Team;
+  currentTeam: TeamBase;
   primaryPosition: Position;
 };
 
@@ -56,10 +59,9 @@ type Venue = {
   timeZone: { id: string; offset: number; tz: string };
 };
 
-type Team = {
-  id: 30;
-  name: string;
-  link: string;
+type TeamBase = { id: number; name: string; link: string };
+
+type Team = TeamBase & {
   venue: Venue;
   abbreviation: string;
   teamName: string;

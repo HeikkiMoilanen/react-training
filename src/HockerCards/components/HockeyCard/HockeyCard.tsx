@@ -1,13 +1,12 @@
 import * as React from "react";
 import { useRouteMatch } from "react-router-dom";
 
-import { PlayerResponse } from "../../types";
-import { useFetch } from "../../useFetch";
-import { getNhlApiUrl } from "../../utils";
-import PlayerImage from "../PlayerImage";
-import Flag from "../Flag";
+import { PlayerResponse } from "types/hockeyCards";
+import { useFetch } from "hooks";
+import { getNhlApiUrl } from "utils";
+import { HockeyCard as HockeyCardComponent } from "components";
 
-import "./HockeyCard.scss";
+import "components/HockeyCard/HockeyCard.scss";
 
 const HockeyCard: React.FC = (props) => {
   const routeMatch = useRouteMatch<{ id: string }>("/hockey-cards/:id");
@@ -35,64 +34,7 @@ const HockeyCard: React.FC = (props) => {
 
   const [player] = data.people;
 
-  const {
-    fullName,
-    height,
-    weight,
-    birthDate,
-    nationality,
-    primaryNumber,
-    primaryPosition,
-  } = player;
-
-  const position = primaryPosition.name;
-
-  const getCaptainStatus = () => {
-    if (player.captain) {
-      return "C";
-    }
-
-    if (player.alternateCaptain) {
-      return "A";
-    }
-
-    return "";
-  };
-
-  const captainStatus = getCaptainStatus();
-
-  return (
-    <div className="HockeyCard">
-      <PlayerImage size="huge" className="HockeyCard__image" {...player} />
-      {captainStatus && (
-        <div className="HockeyCard__captainStatus">{captainStatus}</div>
-      )}
-      <div className="HockeyCard__primaryNumber">{primaryNumber}</div>
-      <div className="HockeyCard__details">
-        <div className="HockeyCard__fullName">
-          <span> {fullName}</span>
-          <Flag nationality={nationality} />
-        </div>
-
-        <div className="HockeyCard__position">{position}</div>
-
-        <table className="HockeyCard__detailTable">
-          <tr>
-            <td>Height:</td>
-            <td>{height}</td>
-          </tr>
-          <tr>
-            <td>Weight:</td>
-            <td>{weight}</td>
-          </tr>
-          <tr>
-            <td>Birth date:</td>
-            <td>{birthDate}</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  );
+  return <HockeyCardComponent player={player} />;
 };
 
 export default HockeyCard;
