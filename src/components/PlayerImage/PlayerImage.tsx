@@ -1,4 +1,6 @@
 import * as React from "react";
+import cx from "classnames";
+import defaultProfile from "./defaultProfile.png";
 
 type Size = "small" | "default" | "large" | "huge";
 
@@ -15,7 +17,7 @@ const getSize = (size: Size) => {
 };
 
 const getMagnifier = (size: Size) => {
-  const magnifierMap = { small: "", default: "", large: "@2x", huge: "@3x" };
+  const magnifierMap = { small: 1, default: 1, large: 2, huge: 3 };
 
   return magnifierMap[size];
 };
@@ -31,13 +33,21 @@ export const PlayerImage: React.FC<{
   const size = getSize(sizeProp);
   const magnifier = getMagnifier(sizeProp);
 
+  const [fallbackImage, setFallbackImage] = React.useState<string>("");
+
+  const magnifierText = magnifier > 1 ? `@${magnifier}x` : "";
+
+  const targetSize = size * magnifier;
+
+  const src = `http://nhl.bamcontent.com/images/headshots/current/${size}x${size}/${id}${magnifierText}.jpg`;
+
   return (
     <img
-      className={className}
-      src={`http://nhl.bamcontent.com/images/headshots/current/${size}x${size}/${id}${magnifier}.jpg`}
+      style={{ width: targetSize, height: targetSize }}
+      className={cx("player-image", className)}
+      onError={() => setFallbackImage(defaultProfile)}
+      src={fallbackImage || src}
       alt={`Profile of ${fullName}`}
     />
   );
 };
-
-export default PlayerImage;

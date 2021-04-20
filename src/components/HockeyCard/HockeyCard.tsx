@@ -12,7 +12,7 @@ export const HockeyCard: React.FC<Props> & Extras = (props) => {
 
   return (
     <Wrapper>
-      <Image player={player} />
+      <Image {...player} />
 
       <CaptainStatus player={player} />
 
@@ -125,10 +125,8 @@ const DetailTable: React.FC<{ className?: string }> = (props) => {
 
 HockeyCard.DetailTable = DetailTable;
 
-const Image: React.FC<{ player: Player }> = (props) => {
-  return (
-    <PlayerImage size="huge" className="hockey-card__image" {...props.player} />
-  );
+const Image: React.FC<React.ComponentProps<typeof PlayerImage>> = (props) => {
+  return <PlayerImage size="huge" className="hockey-card__image" {...props} />;
 };
 
 HockeyCard.Image = Image;
@@ -151,6 +149,10 @@ const CaptainStatus: React.FC<{ player: Player; className?: string }> = (
   };
 
   const captainStatus = getCaptainStatus();
+
+  if (!captainStatus) {
+    return null;
+  }
 
   return (
     <LeftCornerBadge className={className}>{captainStatus}</LeftCornerBadge>

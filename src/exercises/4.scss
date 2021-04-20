@@ -1,0 +1,16 @@
+.exercise-4__listWrapper {
+  width: 100%;
+  overflow-y: auto;
+
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    padding: 2rem;
+    width: 80%;
+    > * {
+      margin: 1rem 0;
+    }
+  }
+}
