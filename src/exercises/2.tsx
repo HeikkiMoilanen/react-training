@@ -1,43 +1,13 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import * as React from "react";
 
-import { Player } from "types/hockeyCards";
 import { PlayerImage, Flag } from "components";
+import { players } from "./data";
 
 import "components/HockeyCard/HockeyCard.scss";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const data: Player = {
-  id: 8479339,
-  fullName: "Patrik Laine",
-  link: "/api/v1/people/8479339",
-  firstName: "Patrik",
-  lastName: "Laine",
-  primaryNumber: "29",
-  birthDate: "1998-04-19",
-  currentAge: 23,
-  birthCity: "TAMPERE",
-  birthCountry: "FIN",
-  nationality: "FIN",
-  height: "6' 5\"",
-  weight: 210,
-  active: true,
-  alternateCaptain: true,
-  captain: false,
-  rookie: false,
-  shootsCatches: "R",
-  rosterStatus: "Y",
-  currentTeam: {
-    id: 29,
-    name: "Columbus Blue Jackets",
-    link: "/api/v1/teams/29",
-  },
-  primaryPosition: {
-    code: "L",
-    name: "Left Wing",
-    type: "Forward",
-    abbreviation: "LW",
-  },
-};
+// here you can adjust player's captain status to test changes in your code
+const data = { ...players.mikael, captain: false, alternateCaptain: true };
 
 /**
  * Exercise 2: Using Props
@@ -53,7 +23,7 @@ const HockeyCardContainer: React.FC = (props) => <HockeyCard />;
 export default HockeyCardContainer;
 
 // define player as prop of type Player
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 type MyProps = {};
 
 // Pass Props type component with React.FC<MyProps>
@@ -67,9 +37,9 @@ const HockeyCard: React.FC = (props) => {
         size="huge"
         className="hockey-card__image"
         // Get id from props
-        id={8479339}
+        id={8475798}
         // get fullName from props
-        fullName="Patrik Laine"
+        fullName="Mikael Granlund"
         // TIP: since player-prop has exactly same properties as required (plus extra), you can use destructuring to pass these props
         // {...player}
       />
@@ -81,34 +51,34 @@ const HockeyCard: React.FC = (props) => {
       <div className="hockey-card__captainStatus">A</div>
 
       <div className="hockey-card__primaryNumber">
-        {/* get primaryNumber from props */}29
+        {/* get primaryNumber from props */}64
       </div>
 
       <div className="hockey-card__details">
         <div className="hockey-card__fullName">
           {/* get fullName from props */}
-          <span>Patrik Laine</span>
+          <span>Mikael Granlund</span>
 
           {/* get nationality from props */}
           <Flag nationality="FIN" />
         </div>
 
         <div className="hockey-card__position">
-          {/* get primaryPosition from props */}Left Wing
+          {/* get primaryPosition from props */}Center
         </div>
 
         <table className="hockey-card__detailTable">
           <tr>
             <td>Height:</td>
-            <td>{/* get height from props */}6' 5"</td>
+            <td>{/* get height from props */}5' 10"</td>
           </tr>
           <tr>
             <td>Weight:</td>
-            <td>{/* get height from props */}210</td>
+            <td>{/* get height from props */}185</td>
           </tr>
           <tr>
             <td>Birth date:</td>
-            <td>{/* get birthDate from props */}1998-04-19</td>
+            <td>{/* get birthDate from props */}1992-02-26</td>
           </tr>
         </table>
       </div>

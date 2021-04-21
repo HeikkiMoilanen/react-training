@@ -5,8 +5,8 @@ import "components/HockeyCard/HockeyCard.scss";
 const HockeyCard: React.FC = (props) => {
   return (
     <div className="hockey-card__wrapper">
-      <div className="hockey-card__fullName">Patrik Laine</div>
-      <div className="hockey-card__position">Left Wing</div>
+      <div className="hockey-card__fullName">Jani Hakanpaa</div>
+      <div className="hockey-card__position">Defenseman</div>
       <table className="hockey-card__detailTable">
         <tr>
           <td>Height:</td>
@@ -14,11 +14,11 @@ const HockeyCard: React.FC = (props) => {
         </tr>
         <tr>
           <td>Weight:</td>
-          <td>210</td>
+          <td>218</td>
         </tr>
         <tr>
           <td>Birth date:</td>
-          <td>1998-04-19</td>
+          <td>1992-03-31</td>
         </tr>
       </table>
     </div>

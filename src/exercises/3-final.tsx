@@ -4,6 +4,9 @@ import { Player } from "types/hockeyCards";
 import { PlayerImage, Flag } from "components";
 
 import "components/HockeyCard/HockeyCard.scss";
+import { players } from "./data";
+
+const data = { ...players.pekka, captain: true, alternateCaptain: false };
 
 const CardLeftCornerBadge: React.FC<{ className?: string }> = (props) => {
   const { children, className = "" } = props;
@@ -43,6 +46,10 @@ const CaptainStatus: React.FC<{ player: Player; className?: string }> = (
   };
 
   const captainStatus = getCaptainStatus();
+
+  if (!captainStatus) {
+    return null;
+  }
 
   return (
     <CardLeftCornerBadge className={className}>
@@ -89,39 +96,6 @@ const HockeyCard: React.FC<Props> = (props) => {
       </div>
     </div>
   );
-};
-
-const data: Player = {
-  id: 8479339,
-  fullName: "Patrik Laine",
-  link: "/api/v1/people/8479339",
-  firstName: "Patrik",
-  lastName: "Laine",
-  primaryNumber: "29",
-  birthDate: "1998-04-19",
-  currentAge: 23,
-  birthCity: "TAMPERE",
-  birthCountry: "FIN",
-  nationality: "FIN",
-  height: "6' 5\"",
-  weight: 210,
-  active: true,
-  alternateCaptain: true,
-  captain: false,
-  rookie: false,
-  shootsCatches: "R",
-  rosterStatus: "Y",
-  currentTeam: {
-    id: 29,
-    name: "Columbus Blue Jackets",
-    link: "/api/v1/teams/29",
-  },
-  primaryPosition: {
-    code: "L",
-    name: "Left Wing",
-    type: "Forward",
-    abbreviation: "LW",
-  },
 };
 
 const HockeyCardContainer: React.FC = (props) => <HockeyCard player={data} />;
