@@ -60,7 +60,12 @@ function App() {
               <HockeyCards teamId={30} />
             </Route>
 
-            <Route>Pick some</Route>
+            <Route>
+              <div style={{ textAlign: "center" }}>
+                <h1>Welcome to React Training!</h1>
+                <h2>Pick some exercise or example</h2>
+              </div>
+            </Route>
           </Switch>
         </main>
       </div>
