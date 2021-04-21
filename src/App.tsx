@@ -32,11 +32,11 @@ function App() {
               ))}
 
               <li>
-                <NavLink to="/todo">Example Todo app</NavLink>
+                <NavLink to="/todo">Example - Todo app</NavLink>
               </li>
 
               <li>
-                <NavLink to="/hockey-cards">Example Hockey cards app</NavLink>
+                <NavLink to="/hockey-cards">Example - Hockey cards app</NavLink>
               </li>
             </ul>
           </nav>
