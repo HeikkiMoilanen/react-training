@@ -22,6 +22,10 @@
   color: white;
   flex: 0 0 200px;
 
+  .App-nav {
+    overflow-y: auto;
+  }
+
   nav ul {
     display: flex;
     flex-direction: column;

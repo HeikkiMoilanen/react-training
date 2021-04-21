@@ -4,6 +4,8 @@ import * as React from "react";
 import { RosterItem } from "types/hockeyCards";
 import { ListWrapper, ListItem } from "./5-common";
 
+// Let’s make an input that filters which players are shown.
+
 // You may use this helper type if you decide to define onChange handler on
 // function body insted of defining it inline in JSX
 type InputHandler = React.ChangeEventHandler<HTMLInputElement>;
