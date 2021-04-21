@@ -39,10 +39,7 @@
       display: flex;
       align-items: stretch;
       justify-content: stretch;
-    }
-
-    li + li {
-      border-bottom: 1px solid #c09a20;
+      border-bottom: 2px solid #c09a20;
     }
 
     a {

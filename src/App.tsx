@@ -20,7 +20,9 @@ function App() {
           <nav className="App-nav">
             <ul>
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink exact to="/">
+                  Home
+                </NavLink>
               </li>
 
               {exercises.map((exercise) => (
