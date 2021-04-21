@@ -3,96 +3,12 @@ import { RosterItem } from "types/hockeyCards";
 export const roster: RosterItem[] = [
   {
     person: {
-      id: 8476432,
-      fullName: "Boone Jenner",
-      link: "/api/v1/people/8476432",
-    },
-    jerseyNumber: "38",
-    position: {
-      code: "C",
-      name: "Center",
-      type: "Forward",
-      abbreviation: "C",
-    },
-  },
-  {
-    person: {
-      id: 8478460,
-      fullName: "Zach Werenski",
-      link: "/api/v1/people/8478460",
-    },
-    jerseyNumber: "8",
-    position: {
-      code: "D",
-      name: "Defenseman",
-      type: "Defenseman",
-      abbreviation: "D",
-    },
-  },
-  {
-    person: {
-      id: 8480205,
-      fullName: "Emil Bemstrom",
-      link: "/api/v1/people/8480205",
-    },
-    jerseyNumber: "52",
-    position: {
-      code: "C",
-      name: "Center",
-      type: "Forward",
-      abbreviation: "C",
-    },
-  },
-  {
-    person: {
-      id: 8474679,
-      fullName: "Gustav Nyquist",
-      link: "/api/v1/people/8474679",
-    },
-    jerseyNumber: "14",
-    position: {
-      code: "C",
-      name: "Center",
-      type: "Forward",
-      abbreviation: "C",
-    },
-  },
-  {
-    person: {
-      id: 8474584,
-      fullName: "Michael Del Zotto",
-      link: "/api/v1/people/8474584",
+      id: 8470755,
+      fullName: "Brad Richardson",
+      link: "/api/v1/people/8470755",
     },
     jerseyNumber: "15",
     position: {
-      code: "D",
-      name: "Defenseman",
-      type: "Defenseman",
-      abbreviation: "D",
-    },
-  },
-  {
-    person: {
-      id: 8474610,
-      fullName: "Zac Dalpe",
-      link: "/api/v1/people/8474610",
-    },
-    jerseyNumber: "26",
-    position: {
-      code: "C",
-      name: "Center",
-      type: "Forward",
-      abbreviation: "C",
-    },
-  },
-  {
-    person: {
-      id: 8474715,
-      fullName: "Cam Atkinson",
-      link: "/api/v1/people/8474715",
-    },
-    jerseyNumber: "13",
-    position: {
       code: "R",
       name: "Right Wing",
       type: "Forward",
@@ -101,11 +17,11 @@ export const roster: RosterItem[] = [
   },
   {
     person: {
-      id: 8476449,
-      fullName: "Scott Harrington",
-      link: "/api/v1/people/8476449",
+      id: 8474579,
+      fullName: "Luca Sbisa",
+      link: "/api/v1/people/8474579",
     },
-    jerseyNumber: "4",
+    jerseyNumber: "55",
     position: {
       code: "D",
       name: "Defenseman",
@@ -115,124 +31,12 @@ export const roster: RosterItem[] = [
   },
   {
     person: {
-      id: 8476870,
-      fullName: "Stefan Matteau",
-      link: "/api/v1/people/8476870",
-    },
-    jerseyNumber: "23",
-    position: {
-      code: "C",
-      name: "Center",
-      type: "Forward",
-      abbreviation: "C",
-    },
-  },
-  {
-    person: {
-      id: 8476914,
-      fullName: "Joonas Korpisalo",
-      link: "/api/v1/people/8476914",
-    },
-    jerseyNumber: "70",
-    position: {
-      code: "G",
-      name: "Goalie",
-      type: "Goalie",
-      abbreviation: "G",
-    },
-  },
-  {
-    person: {
-      id: 8477416,
-      fullName: "Oliver Bjorkstrand",
-      link: "/api/v1/people/8477416",
-    },
-    jerseyNumber: "28",
-    position: {
-      code: "R",
-      name: "Right Wing",
-      type: "Forward",
-      abbreviation: "RW",
-    },
-  },
-  {
-    person: {
-      id: 8477495,
-      fullName: "Seth Jones",
-      link: "/api/v1/people/8477495",
-    },
-    jerseyNumber: "3",
-    position: {
-      code: "D",
-      name: "Defenseman",
-      type: "Defenseman",
-      abbreviation: "D",
-    },
-  },
-  {
-    person: {
-      id: 8477503,
-      fullName: "Max Domi",
-      link: "/api/v1/people/8477503",
-    },
-    jerseyNumber: "16",
-    position: {
-      code: "C",
-      name: "Center",
-      type: "Forward",
-      abbreviation: "C",
-    },
-  },
-  {
-    person: {
-      id: 8477974,
-      fullName: "Ryan MacInnis",
-      link: "/api/v1/people/8477974",
-    },
-    jerseyNumber: "49",
-    position: {
-      code: "C",
-      name: "Center",
-      type: "Forward",
-      abbreviation: "C",
-    },
-  },
-  {
-    person: {
-      id: 8478007,
-      fullName: "Elvis Merzlikins",
-      link: "/api/v1/people/8478007",
+      id: 8474697,
+      fullName: "Mark Borowiecki",
+      link: "/api/v1/people/8474697",
     },
     jerseyNumber: "90",
     position: {
-      code: "G",
-      name: "Goalie",
-      type: "Goalie",
-      abbreviation: "G",
-    },
-  },
-  {
-    person: {
-      id: 8478458,
-      fullName: "Jack Roslovic",
-      link: "/api/v1/people/8478458",
-    },
-    jerseyNumber: "96",
-    position: {
-      code: "C",
-      name: "Center",
-      type: "Forward",
-      abbreviation: "C",
-    },
-  },
-  {
-    person: {
-      id: 8478506,
-      fullName: "Gabriel Carlsson",
-      link: "/api/v1/people/8478506",
-    },
-    jerseyNumber: "53",
-    position: {
       code: "D",
       name: "Defenseman",
       type: "Defenseman",
@@ -241,67 +45,11 @@ export const roster: RosterItem[] = [
   },
   {
     person: {
-      id: 8478567,
-      fullName: "Dean Kukan",
-      link: "/api/v1/people/8478567",
+      id: 8476887,
+      fullName: "Filip Forsberg",
+      link: "/api/v1/people/8476887",
     },
-    jerseyNumber: "46",
-    position: {
-      code: "D",
-      name: "Defenseman",
-      type: "Defenseman",
-      abbreviation: "D",
-    },
-  },
-  {
-    person: {
-      id: 8478831,
-      fullName: "Kevin Stenlund",
-      link: "/api/v1/people/8478831",
-    },
-    jerseyNumber: "11",
-    position: {
-      code: "C",
-      name: "Center",
-      type: "Forward",
-      abbreviation: "C",
-    },
-  },
-  {
-    person: {
-      id: 8478882,
-      fullName: "Vladislav Gavrikov",
-      link: "/api/v1/people/8478882",
-    },
-    jerseyNumber: "44",
-    position: {
-      code: "D",
-      name: "Defenseman",
-      type: "Defenseman",
-      abbreviation: "D",
-    },
-  },
-  {
-    person: {
-      id: 8478949,
-      fullName: "Kole Sherwood",
-      link: "/api/v1/people/8478949",
-    },
-    jerseyNumber: "88",
-    position: {
-      code: "R",
-      name: "Right Wing",
-      type: "Forward",
-      abbreviation: "RW",
-    },
-  },
-  {
-    person: {
-      id: 8479339,
-      fullName: "Patrik Laine",
-      link: "/api/v1/people/8479339",
-    },
-    jerseyNumber: "29",
+    jerseyNumber: "9",
     position: {
       code: "L",
       name: "Left Wing",
@@ -311,9 +59,37 @@ export const roster: RosterItem[] = [
   },
   {
     person: {
-      id: 8479369,
-      fullName: "Andrew Peeke",
-      link: "/api/v1/people/8479369",
+      id: 8478851,
+      fullName: "Alexandre Carrier",
+      link: "/api/v1/people/8478851",
+    },
+    jerseyNumber: "45",
+    position: {
+      code: "D",
+      name: "Defenseman",
+      type: "Defenseman",
+      abbreviation: "D",
+    },
+  },
+  {
+    person: {
+      id: 8479671,
+      fullName: "Mathieu Olivier",
+      link: "/api/v1/people/8479671",
+    },
+    jerseyNumber: "25",
+    position: {
+      code: "R",
+      name: "Right Wing",
+      type: "Forward",
+      abbreviation: "RW",
+    },
+  },
+  {
+    person: {
+      id: 8477343,
+      fullName: "Tyler Lewington",
+      link: "/api/v1/people/8477343",
     },
     jerseyNumber: "2",
     position: {
@@ -325,25 +101,39 @@ export const roster: RosterItem[] = [
   },
   {
     person: {
-      id: 8479945,
-      fullName: "Gavin Bayreuther",
-      link: "/api/v1/people/8479945",
+      id: 8477446,
+      fullName: "Michael McCarron",
+      link: "/api/v1/people/8477446",
     },
-    jerseyNumber: "7",
+    jerseyNumber: "47",
     position: {
-      code: "D",
-      name: "Defenseman",
-      type: "Defenseman",
-      abbreviation: "D",
+      code: "R",
+      name: "Right Wing",
+      type: "Forward",
+      abbreviation: "RW",
     },
   },
   {
     person: {
-      id: 8480074,
-      fullName: "Alexandre Texier",
-      link: "/api/v1/people/8480074",
+      id: 8479288,
+      fullName: "Kasimir Kaskisuo",
+      link: "/api/v1/people/8479288",
     },
-    jerseyNumber: "42",
+    jerseyNumber: "73",
+    position: {
+      code: "G",
+      name: "Goalie",
+      type: "Goalie",
+      abbreviation: "G",
+    },
+  },
+  {
+    person: {
+      id: 8479514,
+      fullName: "Rem Pitlick",
+      link: "/api/v1/people/8479514",
+    },
+    jerseyNumber: "16",
     position: {
       code: "C",
       name: "Center",
@@ -353,11 +143,95 @@ export const roster: RosterItem[] = [
   },
   {
     person: {
-      id: 8480762,
-      fullName: "Eric Robinson",
-      link: "/api/v1/people/8480762",
+      id: 8481577,
+      fullName: "Philip Tomasino",
+      link: "/api/v1/people/8481577",
     },
-    jerseyNumber: "50",
+    jerseyNumber: "26",
+    position: {
+      code: "C",
+      name: "Center",
+      type: "Forward",
+      abbreviation: "C",
+    },
+  },
+  {
+    person: {
+      id: 8471469,
+      fullName: "Pekka Rinne",
+      link: "/api/v1/people/8471469",
+    },
+    jerseyNumber: "35",
+    position: {
+      code: "G",
+      name: "Goalie",
+      type: "Goalie",
+      abbreviation: "G",
+    },
+  },
+  {
+    person: {
+      id: 8474600,
+      fullName: "Roman Josi",
+      link: "/api/v1/people/8474600",
+    },
+    jerseyNumber: "59",
+    position: {
+      code: "D",
+      name: "Defenseman",
+      type: "Defenseman",
+      abbreviation: "D",
+    },
+  },
+  {
+    person: {
+      id: 8475168,
+      fullName: "Matt Duchene",
+      link: "/api/v1/people/8475168",
+    },
+    jerseyNumber: "95",
+    position: {
+      code: "C",
+      name: "Center",
+      type: "Forward",
+      abbreviation: "C",
+    },
+  },
+  {
+    person: {
+      id: 8475176,
+      fullName: "Ryan Ellis",
+      link: "/api/v1/people/8475176",
+    },
+    jerseyNumber: "4",
+    position: {
+      code: "D",
+      name: "Defenseman",
+      type: "Defenseman",
+      abbreviation: "D",
+    },
+  },
+  {
+    person: {
+      id: 8475218,
+      fullName: "Mattias Ekholm",
+      link: "/api/v1/people/8475218",
+    },
+    jerseyNumber: "14",
+    position: {
+      code: "D",
+      name: "Defenseman",
+      type: "Defenseman",
+      abbreviation: "D",
+    },
+  },
+  {
+    person: {
+      id: 8475287,
+      fullName: "Erik Haula",
+      link: "/api/v1/people/8475287",
+    },
+    jerseyNumber: "56",
     position: {
       code: "L",
       name: "Left Wing",
@@ -367,11 +241,25 @@ export const roster: RosterItem[] = [
   },
   {
     person: {
-      id: 8482247,
-      fullName: "Mikko Lehtonen",
-      link: "/api/v1/people/8482247",
+      id: 8475714,
+      fullName: "Calle Jarnkrok",
+      link: "/api/v1/people/8475714",
     },
-    jerseyNumber: "43",
+    jerseyNumber: "19",
+    position: {
+      code: "C",
+      name: "Center",
+      type: "Forward",
+      abbreviation: "C",
+    },
+  },
+  {
+    person: {
+      id: 8475790,
+      fullName: "Erik Gudbranson",
+      link: "/api/v1/people/8475790",
+    },
+    jerseyNumber: "44",
     position: {
       code: "D",
       name: "Defenseman",
@@ -381,9 +269,37 @@ export const roster: RosterItem[] = [
   },
   {
     person: {
-      id: 8482623,
-      fullName: "Josh Dunne",
-      link: "/api/v1/people/8482623",
+      id: 8475793,
+      fullName: "Ryan Johansen",
+      link: "/api/v1/people/8475793",
+    },
+    jerseyNumber: "92",
+    position: {
+      code: "C",
+      name: "Center",
+      type: "Forward",
+      abbreviation: "C",
+    },
+  },
+  {
+    person: {
+      id: 8475798,
+      fullName: "Mikael Granlund",
+      link: "/api/v1/people/8475798",
+    },
+    jerseyNumber: "64",
+    position: {
+      code: "C",
+      name: "Center",
+      type: "Forward",
+      abbreviation: "C",
+    },
+  },
+  {
+    person: {
+      id: 8476393,
+      fullName: "Nick Cousins",
+      link: "/api/v1/people/8476393",
     },
     jerseyNumber: "21",
     position: {
@@ -391,6 +307,188 @@ export const roster: RosterItem[] = [
       name: "Center",
       type: "Forward",
       abbreviation: "C",
+    },
+  },
+  {
+    person: {
+      id: 8476428,
+      fullName: "Rocco Grimaldi",
+      link: "/api/v1/people/8476428",
+    },
+    jerseyNumber: "23",
+    position: {
+      code: "R",
+      name: "Right Wing",
+      type: "Forward",
+      abbreviation: "RW",
+    },
+  },
+  {
+    person: {
+      id: 8476925,
+      fullName: "Colton Sissons",
+      link: "/api/v1/people/8476925",
+    },
+    jerseyNumber: "10",
+    position: {
+      code: "C",
+      name: "Center",
+      type: "Forward",
+      abbreviation: "C",
+    },
+  },
+  {
+    person: {
+      id: 8476988,
+      fullName: "Matt Benning",
+      link: "/api/v1/people/8476988",
+    },
+    jerseyNumber: "5",
+    position: {
+      code: "D",
+      name: "Defenseman",
+      type: "Defenseman",
+      abbreviation: "D",
+    },
+  },
+  {
+    person: {
+      id: 8477424,
+      fullName: "Juuse Saros",
+      link: "/api/v1/people/8477424",
+    },
+    jerseyNumber: "74",
+    position: {
+      code: "G",
+      name: "Goalie",
+      type: "Goalie",
+      abbreviation: "G",
+    },
+  },
+  {
+    person: {
+      id: 8477433,
+      fullName: "Ben Harpur",
+      link: "/api/v1/people/8477433",
+    },
+    jerseyNumber: "17",
+    position: {
+      code: "D",
+      name: "Defenseman",
+      type: "Defenseman",
+      abbreviation: "D",
+    },
+  },
+  {
+    person: {
+      id: 8478042,
+      fullName: "Viktor Arvidsson",
+      link: "/api/v1/people/8478042",
+    },
+    jerseyNumber: "33",
+    position: {
+      code: "R",
+      name: "Right Wing",
+      type: "Forward",
+      abbreviation: "RW",
+    },
+  },
+  {
+    person: {
+      id: 8478508,
+      fullName: "Yakov Trenin",
+      link: "/api/v1/people/8478508",
+    },
+    jerseyNumber: "13",
+    position: {
+      code: "C",
+      name: "Center",
+      type: "Forward",
+      abbreviation: "C",
+    },
+  },
+  {
+    person: {
+      id: 8479316,
+      fullName: "Luke Kunin",
+      link: "/api/v1/people/8479316",
+    },
+    jerseyNumber: "11",
+    position: {
+      code: "C",
+      name: "Center",
+      type: "Forward",
+      abbreviation: "C",
+    },
+  },
+  {
+    person: {
+      id: 8479371,
+      fullName: "Dante Fabbro",
+      link: "/api/v1/people/8479371",
+    },
+    jerseyNumber: "57",
+    position: {
+      code: "D",
+      name: "Defenseman",
+      type: "Defenseman",
+      abbreviation: "D",
+    },
+  },
+  {
+    person: {
+      id: 8479602,
+      fullName: "Jeremy Davies",
+      link: "/api/v1/people/8479602",
+    },
+    jerseyNumber: "38",
+    position: {
+      code: "D",
+      name: "Defenseman",
+      type: "Defenseman",
+      abbreviation: "D",
+    },
+  },
+  {
+    person: {
+      id: 8479661,
+      fullName: "Tanner Jeannot",
+      link: "/api/v1/people/8479661",
+    },
+    jerseyNumber: "84",
+    position: {
+      code: "L",
+      name: "Left Wing",
+      type: "Forward",
+      abbreviation: "LW",
+    },
+  },
+  {
+    person: {
+      id: 8480009,
+      fullName: "Eeli Tolvanen",
+      link: "/api/v1/people/8480009",
+    },
+    jerseyNumber: "28",
+    position: {
+      code: "R",
+      name: "Right Wing",
+      type: "Forward",
+      abbreviation: "RW",
+    },
+  },
+  {
+    person: {
+      id: 8480063,
+      fullName: "David Farrance",
+      link: "/api/v1/people/8480063",
+    },
+    jerseyNumber: "22",
+    position: {
+      code: "D",
+      name: "Defenseman",
+      type: "Defenseman",
+      abbreviation: "D",
     },
   },
 ];

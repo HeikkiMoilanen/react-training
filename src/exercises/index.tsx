@@ -20,6 +20,10 @@ import Extra72 from "./7-extra2";
 import Exercise8 from "./8";
 import Final8 from "./8-final";
 import Extra8 from "./8-extra1";
+import Exercise9 from "./9";
+import Final9 from "./9-final";
+import Extra91 from "./9-extra1";
+import Extra92 from "./9-extra2";
 
 const Exercise4Container: React.FC = (props) => <Exercise4 roster={roster} />;
 const Final4Container: React.FC = (props) => <Final4 roster={roster} />;
@@ -59,6 +63,18 @@ const exercises = [
     path: "/exercices/8-extra",
     label: "8 - Extra points",
     component: Extra8,
+  },
+  { path: "/exercices/9", label: "Exercise 9", component: Exercise9 },
+  { path: "/exercices/9-final", label: "Final 9", component: Final9 },
+  {
+    path: "/exercices/9-extra-1",
+    label: "9 - Extra points 1",
+    component: Extra91,
+  },
+  {
+    path: "/exercices/9-extra-2",
+    label: "9 - Extra points 2",
+    component: Extra92,
   },
 ] as const;
 
