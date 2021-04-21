@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
 
 import Todos from "./Todos";
 import HockeyCards from "./HockeyCards";
@@ -15,21 +20,21 @@ function App() {
           <nav className="App-nav">
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <NavLink to="/">Home</NavLink>
               </li>
 
               {exercises.map((exercise) => (
                 <li key={exercise.path}>
-                  <Link to={exercise.path}>{exercise.label}</Link>
+                  <NavLink to={exercise.path}>{exercise.label}</NavLink>
                 </li>
               ))}
 
               <li>
-                <Link to="/todo">Example Todo app</Link>
+                <NavLink to="/todo">Example Todo app</NavLink>
               </li>
 
               <li>
-                <Link to="/hockey-cards">Example Hockey cards app</Link>
+                <NavLink to="/hockey-cards">Example Hockey cards app</NavLink>
               </li>
             </ul>
           </nav>
