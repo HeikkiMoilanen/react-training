@@ -8,18 +8,20 @@ const HockeyCard: React.FC = (props) => {
       <div className="hockey-card__fullName">Jani Hakanpaa</div>
       <div className="hockey-card__position">Defenseman</div>
       <table className="hockey-card__detailTable">
-        <tr>
-          <td>Height:</td>
-          <td>6' 5"</td>
-        </tr>
-        <tr>
-          <td>Weight:</td>
-          <td>218</td>
-        </tr>
-        <tr>
-          <td>Birth date:</td>
-          <td>1992-03-31</td>
-        </tr>
+        <tbody>
+          <tr>
+            <td>Height:</td>
+            <td>6' 5"</td>
+          </tr>
+          <tr>
+            <td>Weight:</td>
+            <td>218</td>
+          </tr>
+          <tr>
+            <td>Birth date:</td>
+            <td>1992-03-31</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   );

@@ -118,7 +118,7 @@ const DetailTable: React.FC<{ className?: string }> = (props) => {
 
   return (
     <table className={`hockey-card__detailTable ${className}`}>
-      {children}
+      <tbody>{children}</tbody>
     </table>
   );
 };

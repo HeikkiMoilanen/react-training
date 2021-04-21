@@ -68,18 +68,20 @@ const HockeyCard: React.FC = (props) => {
         </div>
 
         <table className="hockey-card__detailTable">
-          <tr>
-            <td>Height:</td>
-            <td>{/* get height from props */}5' 10"</td>
-          </tr>
-          <tr>
-            <td>Weight:</td>
-            <td>{/* get height from props */}185</td>
-          </tr>
-          <tr>
-            <td>Birth date:</td>
-            <td>{/* get birthDate from props */}1992-02-26</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>Height:</td>
+              <td>{/* get height from props */}5' 10"</td>
+            </tr>
+            <tr>
+              <td>Weight:</td>
+              <td>{/* get height from props */}185</td>
+            </tr>
+            <tr>
+              <td>Birth date:</td>
+              <td>{/* get birthDate from props */}1992-02-26</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>

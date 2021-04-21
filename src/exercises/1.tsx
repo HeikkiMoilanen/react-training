@@ -12,7 +12,7 @@ import "components/HockeyCard/HockeyCard.scss";
  *
  * The card should show the player's full name and position.
 
- * The card should also include a <table> with 3 <tr>: height, weight and birth date
+ * The card should also include a <table> with <tbody> and 3 <tr>: height, weight and birth date
  * These rows should each have two <td>, e.g.
  * <td>Height:</td>
  * <td>6' 5"</td>
